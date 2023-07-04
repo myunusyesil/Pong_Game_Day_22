@@ -23,3 +23,7 @@ class Pongscreen(Turtle):
                 self.penup()
 
             self.goto(0, y_pos)
+
+    def game_over(self):
+        self.goto(0, 0)
+        self.write("GAME OVER", align='center', font=('Arial', 20, 'normal'), move=False)
